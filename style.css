@@ -77,6 +77,7 @@ body{
 
 .sobre_Banner{
   color: var(--texto-claro);
+  opacity: 0.4;
   font-size: 30px;
   font-weight: 400;
   padding: 0 20px;
@@ -96,6 +97,14 @@ body{
   z-index: 2;
 }
 
+.conteudo_Projetos{
+  background-color: #1a6aff;
+  font-size: 40px;
+  padding: 80px 80px;
+  position: relative;
+  z-index: 3;
+}
+
 .menu{
     position: fixed;
     width: 100%;
@@ -105,12 +114,21 @@ body{
     padding-bottom: 4px;
 }
 
+.fas{
+  color: var(--texto-claro);
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: all 0.4s;
+}
+
 .menu nav{
     display: flex;
     justify-content: center;
 }
 
 .menu nav a{
+  font-family: 'Poppins', sans-serif;
   color: var(--texto-claro);
   font-size: 20px;
   text-decoration: none;
@@ -129,6 +147,62 @@ body{
   margin-bottom: 40px;
 }
 
+.conteudo_Projetos h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.Git-Linkedin{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 150px;
+  margin-left: 160px;
+}
+
+.Git-Linkedin a.Linkedin{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--texto-claro);
+  font-size: 25px;
+  text-decoration: none;
+  background-color: #1d1d1d;
+  border: #f3f3f3 solid 2px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.Git-Linkedin a.GitHub{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--texto-escuro);
+  font-size: 25px;
+  text-decoration: none;
+  background-color: #f3f3f3;
+  border: #0C121D solid 2px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.Git-Linkedin a.GitHub:hover{
+  color: var(--texto-claro);
+  background-color: #0C121D;
+  transition: all 0.3s;
+}
+
+.Git-Linkedin a.Linkedin:hover{
+  color: var(--texto-escuro);
+  background-color: #f3f3f3;
+  transition: all 0.3s;
+}
+
 .Titulo_Sobre{
   font-family: 'FonteProSobreMim';
   font-size: 40px;
@@ -137,6 +211,12 @@ body{
 }
 
 .conteudo p{
+  font-size: 35px;
+  text-align: center;
+  margin: 20px 0 45px 0;
+}
+
+.conteudo_Projetos p{
   font-size: 35px;
   text-align: center;
   margin: 20px 0 45px 0;
@@ -151,6 +231,9 @@ body{
   height: auto;
   margin-bottom: 150px;
   transition: all 0.4s;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .FotoHover{
@@ -211,15 +294,22 @@ body{
 
 .card{
   width: 500px;
-  background-color: var(--cor-quintaria);
-  border-radius: 10px;
-  color: var(--texto-claro);
+  background-color: var(--texto-claro);
+  border-radius: 5px;
+  color: var(--texto-escuro);
   padding: 20px;
   margin: 20px;
   box-shadow: 0 5px 20px var(--sombra-preta);
-  border-left: #d4d4d4 solid 8px;
   transition: all 0.4s;
   min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-dentro{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card:hover{
@@ -238,7 +328,7 @@ body{
 .Cards_Linha{
   border-style: dashed;
   border-width: 1px;
-  color: var(--texto-claro);
+  color: var(--texto-escuro);
   margin-bottom: 20px;
 }
 
@@ -251,28 +341,33 @@ body{
   display: block;
   text-align: center;
   margin-top: 20px;
-  color: var(--texto-claro);
+  color: var(--texto-escuro);
   font-size: 25px;
   text-decoration: none;
-  background-color: #3a3a3a;
   padding: 10px;
-  border-radius: 5px;
   transition: all 0.4s;
   width: 200px;
-  margin: 20px auto;
+  margin-top: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card a i{
+  margin-right: 10px;
 }
 
 .card-dentro a:hover{
-  background-color: #999999;
+  color: #1a6aff;
   transition: all 0.4s;
 }
 
 .Titulo_Projetos{
-  font-family: 'FonteProSobreMim';
-  font-size: 80px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120px;
   margin-bottom: 10px;
   text-align: center;
-  color: var(--texto-escuro);
+  color: var(--texto-claro);
 }
 
 .animar {
@@ -284,4 +379,243 @@ body{
 .animar.ativo {
   opacity: 1;
   transform: translateY(0);
+}
+
+.Techs{
+  background-color: var(--texto-escuro);
+  padding: 80px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.Techs_Icons{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.Techs_Icons i{
+  font-size: 80px;
+  color: var(--texto-claro);
+  transition: all 0.4s;
+}
+
+.Techs_Icons i:hover{
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+.Titulo_Techs{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: var(--texto-claro);
+}
+
+.Titulo_Techs_Baixo{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #949494;
+}
+
+.Titulo_Tools{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: var(--texto-claro);
+  margin-top: 60px;
+}
+
+.Titulo_Tools_Baixo{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #949494;
+}
+
+.Tools_Icons{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.Tools_Icons i{
+  font-size: 80px;
+  color: var(--texto-claro);
+  transition: all 0.4s;
+}
+
+.Tools_Icons i:hover{
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+.Technologies{
+  padding-bottom: 100px;
+}
+
+.Contato{
+  background-color: var(--texto-claro);
+  padding: 80px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.Contato h2{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: var(--texto-escuro);
+}
+
+.Contato_Icons{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.Contato_Icons a{
+  color: var(--texto-escuro);
+  font-size: 80px;
+  transition: all 0.4s;
+}
+
+.Texto_Contato{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--texto-escuro);
+  align-items: first baseline;
+}
+
+.Email_Box{
+  margin: 20px auto;
+  border: var(--texto-escuro) solid 2px;
+  border-radius: 5px;
+  display: grid;
+  max-width: 400px;
+}
+    
+.Nome{
+  text-align: center;
+  margin: 0 3px;
+  padding: 10px;
+  font-size: 20px;
+  width: 300px;
+  border: none;
+}
+
+.Input_Name{
+  border: var(--texto-escuro) solid 2px;
+  padding: 10px;
+  font-size: 20px;
+  width: 370px;
+}
+
+.EmailNumber{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  width: 300px;
+  border: none;
+}
+
+.Input_Email{
+  border: var(--texto-escuro) solid 2px;
+  padding: 10px;
+  font-size: 20px;
+  width: 175px;
+}
+
+.Input_Phone{
+  border: var(--texto-escuro) solid 2px;
+  padding: 10px;
+  font-size: 20px;
+  width: 175px;
+}
+
+.Input_Message{
+  border: var(--texto-escuro) solid 2px;
+  padding: 10px;
+  font-size: 20px;
+  width: 370px;
+  height: 150px;
+  padding-bottom: 120px;
+}
+
+.Message {
+  text-align: center;
+  margin: auto;
+}
+
+.Send_Button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.Send_Button button {
+  color: var(--texto-claro);
+  font-size: large;
+  text-decoration: none;
+  background-color: var(--texto-escuro);
+  border: var(--texto-escuro) solid 2px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.4s;
+  width: 370px;
+}
+
+.Send_Button button:hover {
+  color: var(--texto-escuro);
+  background-color: var(--texto-claro);
+  transition: all 0.4s;
+}
+
+.Send_Button button:active {
+  transform: scale(0.95);
+  transition: all 0.1s;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: var(--texto-escuro);
+  padding: 20px;
+  text-align: center;
+  color: var(--texto-claro);
+}
+
+.Links_Footer a{
+  color: var(--texto-claro);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.4s;
+}
+
+.Links_Footer{
+  display: flex;
+  justify-content: center;
+  padding-left: 1200px;
+}
+
+.Links_Footer a:hover{
+  transform: scale(1.20);
+  transition: all 0.2s;
+}
+
+.Links_Footer a:active{
+  transform: scale(0.95);
+  transition: all 0.1s;
 }

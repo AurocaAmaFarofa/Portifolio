@@ -10,14 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <header>
         <div class="menu">
             <nav>
-                <a href="#home">Home</a>
-                <a href="#SobreMim">About</a>
-                <a href="#projetos">Projects</a>
+
+                <a href="#SobreMim"><i class="fas fa-user"></i>About</a>
+                <a href="#projetos"><i class="fas fa-briefcase"></i>Projects</a>
+                <a href="#Techs"><i class="fas fa-laptop-code"></i>Technologies</a>
+                <a href="#Contato"><i class="fas fa-envelope"></i>Contact</a>
             </nav>
         </div>
         <div class="banner_Sobe" id="home">
@@ -29,7 +33,7 @@
             <div class="Conteudo_Sobre">
     
                 <div class="FotoHover">
-                <img class="Foto_Minha animar" src="https://i.pinimg.com/736x/a7/33/50/a73350824a69577ab955574440424b97.jpg">
+                <img class="Foto_Minha animar" src="https://i.pinimg.com/1200x/9b/97/bd/9b97bda528a232242e31e03056cdc778.jpg">
                 </div>
 
             <div class="lado_direito">
@@ -38,8 +42,14 @@
             </div>
 
             <div class="texto_sobre animar">
-                <p>Hello! My name is Aurick Dutra and I am a Software Engineering student currently in my first semester. I intend to put all the skills I learn into practice to become a DevOps engineer focused on either Back-End or Cybersecurity. At the moment I am learning the basic fundamentals of HTML, CSS, and JavaScript.</p>
+                <p>Hello! My name is Aurick Dutra and I am a Software Engineering student currently in my first semester. I intend to put all the skills I learn into practice to become a DevOps engineer.</p>
             </div>
+            
+            <div class="Git-Linkedin animar">
+                <a href="https://github.com/aurocaamafarofa" target="_blank" rel="noopener noreferrer" class="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/aurick-jullian-dutra-56832830a/" target="_blank" rel="noopener noreferrer" class="Linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+
         </div>
     </div>
 
@@ -47,8 +57,8 @@
         </div>
     </header>
     <main>
-        <div class="conteudo" id="projetos">
-            <h2 class="Titulo_Projetos animar">Projetos</h2>
+        <div class="conteudo_Projetos" id="projetos">
+            <h2 class="Titulo_Projetos animar">Projects</h2>
 
             <div class="cards animar">
                 <div class="card">
@@ -56,7 +66,7 @@
                     <h3>Freight search Website</h3>
                     <hr class="Cards_Linha"></hr>
                     <p>This is a project that connects drivers and transportation companies. Companies post loads and drivers accept deliveries.</p>
-                    <a href="https://aurocaamafarofa.github.io/Plataforma-De-Cargas/" target="_blank" rel="noopener noreferrer">GitHub-Pages</a>
+                    <a href="https://aurocaamafarofa.github.io/Plataforma-De-Cargas/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>Code</a>
                 </div>
                 </div>
 
@@ -65,7 +75,7 @@
                     <h3>Portfolio Project</h3>
                     <hr class="Cards_Linha"></hr>
                     <p>In this project I create a personal portfolio that presents my previous work, skills, and experience.</p>
-                    <a href="https://aurocaamafarofa.github.io/portifolio_teste_facul/" target="_blank" rel="noopener noreferrer">GitHub-Pages</a>
+                    <a href="https://aurocaamafarofa.github.io/portifolio_teste_facul/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>Code</a>
                 </div>
                 </div>
  
@@ -86,8 +96,64 @@
                 </div>
 
             </div>
+
         </div>
+
+        <div class="Techs" id="Techs">
+                <div class="Technologies">
+                    <h2 class="Titulo_Techs animar">Code</h2>
+                    <h3 class="Titulo_Techs_Baixo animar">Technologies related with coding</h3>
+                    <div class="Techs_Icons animar">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-python"></i>
+                    </div>
+                </div>
+
+                <div class="Technologies">
+                    <h2 class="Titulo_Tools animar">Tools</h2>
+                    <h3 class="Titulo_Tools_Baixo animar">Tools and other softwares</h3>
+                    <div class="Tools_Icons animar">
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-windows"></i>
+                        <i class="devicon-vscode-plain"></i>
+                    </div>
+                </div>
+        </div>
+
+        <div class="Contato" id="Contato">
+            <h2 class="Titulo_Contato animar">Contact Me</h2>
+            <h3 class="Texto_Contato animar">Email me at aurickdutraa@gmail.com</h3>
+
+            <div class="Email_Box animar">
+                <div class="Nome">
+                    <input type="text" placeholder="Name" class="Input_Name">
+                </div>
+                <div class="EmailNumber">
+                    <input type="email" placeholder="Email" class="Input_Email">
+                    <input type="text" placeholder="Phone Number" class="Input_Phone">
+                </div>
+                <div class="Message">
+                    <input type="text" placeholder="Message" class="Input_Message">
+                </div>
+                <div class="Send_Button">
+                    <button>Send</button>
+                </div>
+            </div>
+    
+        </div>
+
     </main>
+
+    <footer>
+        <p>&copy; 2026 Aurick Dutra.</p>
+        <div class="Links_Footer">
+            <a href="https://www.linkedin.com/in/aurick-jullian-dutra-56832830a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aurocaamafarofa" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
