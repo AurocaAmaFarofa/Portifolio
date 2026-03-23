@@ -30,3 +30,35 @@ function animarScroll() {
 }
 
 window.addEventListener('scroll', animarScroll);
+
+const textos = ["Hi, i'm Aurick Dutra!", "I'm a Software Engineering student.", "Welcome to my portfolio!"];
+let indexTexto = 0;
+let indexLetra = 0;
+let escrevendo = true;
+
+function escrever() {
+  const elemento = document.getElementById("texto");
+
+  if (escrevendo) {
+    elemento.textContent = textos[indexTexto].substring(0, indexLetra + 1);
+    indexLetra++;
+
+    if (indexLetra === textos[indexTexto].length) {
+      escrevendo = false;
+      setTimeout(escrever, 1500); // pausa antes de apagar
+      return;
+    }
+  } else {
+    elemento.textContent = textos[indexTexto].substring(0, indexLetra - 1);
+    indexLetra--;
+
+    if (indexLetra === 0) {
+      escrevendo = true;
+      indexTexto = (indexTexto + 1) % textos.length;
+    }
+  }
+
+  setTimeout(escrever, escrevendo ? 100 : 50);
+}
+
+escrever();

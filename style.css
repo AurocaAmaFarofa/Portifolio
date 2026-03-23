@@ -72,7 +72,22 @@ body{
   letter-spacing: 3px;
   transition: 0.2s;
   z-index: 1;
-  font-family: 'Dirtyline36Daysoftype2022', sans-serif;
+}
+
+.titulo_Banner h1{
+  font-size: 120px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#texto::after {
+  content: "|";
+  animation: piscar 0.7s infinite;
+}
+
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .sobre_Banner{
@@ -98,11 +113,12 @@ body{
 }
 
 .conteudo_Projetos{
-  background-color: #1a6aff;
+  background-color: #274d94;
   font-size: 40px;
   padding: 80px 80px;
   position: relative;
   z-index: 3;
+  min-height: 10px;
 }
 
 .menu{
@@ -301,7 +317,7 @@ body{
   margin: 20px;
   box-shadow: 0 5px 20px var(--sombra-preta);
   transition: all 0.4s;
-  min-height: 450px;
+  min-height: 542px;
   display: flex;
   flex-direction: column;
 }
@@ -358,7 +374,7 @@ body{
 }
 
 .card-dentro a:hover{
-  color: #1a6aff;
+  color: #274d94;
   transition: all 0.4s;
 }
 
